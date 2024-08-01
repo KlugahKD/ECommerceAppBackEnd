@@ -2,9 +2,9 @@ using Serilog;
 
 namespace ECommerce.SharedLibrary.Logs;
 
-public static class LogException
+public static class LogExceptions
 {
-    public static void LogExceptions(Exception ex)
+    public static void LogExceptionsTo(Exception ex)
     {
         LogToFile(ex.Message);
         LogToConsole(ex.Message);
